@@ -4,3 +4,9 @@ height = float(input("Enter your height in feet"))
 height = height * 0.3048
 bmi = round(weight / (height ** 2), 2)
 print(f"Your BMI is : {bmi}")
+if bmi < 18.5:
+    print("You are underweight")
+elif bmi >= 18.5 and bmi < 25:
+    print("Your weight is normal")
+else:
+    print("Sorry, you are overweight")
